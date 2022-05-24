@@ -1,0 +1,8 @@
+[
+  { "id": 1, "name": "Hammer" },
+  { "id": 2, "name": "Srewdriver" },
+  { "id": 3, "name": "Wrench" },
+  { "id": 4, "name": "Drill" },
+  { "id": 5, "name": "Clamp" },
+  { "id": 6, "name": "Workbench" }
+]
