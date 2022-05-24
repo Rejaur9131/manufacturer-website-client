@@ -3,9 +3,10 @@ import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
 import auth from './../../firebase.init';
-
+import { UserCircleIcon } from '@heroicons/react/solid';
 const Navbar = () => {
   const [user, loading, error] = useAuthState(auth);
+
   const logout = () => {
     signOut(auth);
   };
@@ -19,7 +20,7 @@ const Navbar = () => {
         <Link to="/about">About</Link>
       </li>
       <li>
-        <Link to="/appointment">Appointment</Link>
+        <Link to="/purchase">Purchase</Link>
       </li>
       <li>
         <Link to="/review">Reviews</Link>
@@ -29,9 +30,15 @@ const Navbar = () => {
       </li>
       <li>
         {user ? (
-          <button className="btn btn-ghost" onClick={logout}>
-            Sign Out
-          </button>
+          <>
+            <Link to="">
+              <UserCircleIcon className="h-8 w-8 text-gray-200 font-bold"></UserCircleIcon> <span className="font-bold">{user?.displayName}</span>
+            </Link>
+
+            <button className="btn btn-ghost mt-1" onClick={logout}>
+              Sign Out
+            </button>
+          </>
         ) : (
           <Link to="/login">Login</Link>
         )}
