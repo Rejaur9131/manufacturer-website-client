@@ -7,7 +7,7 @@ const Tools = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:5000/tools')
+      .get('https://still-spire-72766.herokuapp.com/tools')
       .then((response) => setTools(response.data))
       .catch((error) => console.log(error));
   }, []);
