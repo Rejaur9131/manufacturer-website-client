@@ -8,7 +8,8 @@ import Purchase from './Pages/Purchase/Purchase';
 import RequireAuth from './Pages/Login/RequireAuth';
 import Login from './Pages/Login/Login';
 import SignUp from './Pages/Login/SignUp';
-import Reviews from './Pages/Home/Reviews';
+import Dashboard from './Pages/Dashboard/Dashboard';
+import Footer from './Pages/Shared/Footer';
 
 function App() {
   return (
@@ -26,10 +27,12 @@ function App() {
             </RequireAuth>
           }
         ></Route>
+        <Route path="/dashboard" element={<Dashboard></Dashboard>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/signup" element={<SignUp></SignUp>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }

@@ -31,8 +31,9 @@ const Navbar = () => {
       <li>
         {user ? (
           <>
+            <Link to="/dashboard">Dashboard</Link>
             <Link to="">
-              <UserCircleIcon className="h-8 w-8 text-gray-200 font-bold"></UserCircleIcon> <span className="font-bold">{user?.displayName}</span>
+              <UserCircleIcon className="h-8 w-8 text-gray-400 font-bold"></UserCircleIcon> <span className="font-bold">{user?.displayName}</span>
             </Link>
 
             <button className="btn btn-ghost mt-1" onClick={logout}>

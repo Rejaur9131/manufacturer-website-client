@@ -1,8 +1,50 @@
 [
-  { "id": 1, "name": "Hammer" },
-  { "id": 2, "name": "Srewdriver" },
-  { "id": 3, "name": "Wrench" },
-  { "id": 4, "name": "Drill" },
-  { "id": 5, "name": "Clamp" },
-  { "id": 6, "name": "Workbench" }
+  {
+    "name": "Hammer",
+    "img": "https://cdn.pixabay.com/photo/2014/04/02/14/09/hammer-306313_960_720.png",
+    "description": "Some short description",
+    "minimumOrderQuantity": 100,
+    "availableQuantity": 100,
+    "unitPrice": 200
+  },
+  {
+    "name": "Hammer",
+    "img": "https://cdn.pixabay.com/photo/2014/04/02/14/09/hammer-306313_960_720.png",
+    "description": "Some short description",
+    "minimumOrderQuantity": 100,
+    "availableQuantity": 100,
+    "unitPrice": 200
+  },
+  {
+    "name": "Hammer",
+    "img": "https://cdn.pixabay.com/photo/2014/04/02/14/09/hammer-306313_960_720.png",
+    "description": "Some short description",
+    "minimumOrderQuantity": 100,
+    "availableQuantity": 100,
+    "unitPrice": 200
+  },
+  {
+    "name": "Hammer",
+    "img": "https://cdn.pixabay.com/photo/2014/04/02/14/09/hammer-306313_960_720.png",
+    "description": "Some short description",
+    "minimumOrderQuantity": 100,
+    "availableQuantity": 100,
+    "unitPrice": 200
+  },
+  {
+    "name": "Hammer",
+    "img": "https://cdn.pixabay.com/photo/2014/04/02/14/09/hammer-306313_960_720.png",
+    "description": "Some short description",
+    "minimumOrderQuantity": 100,
+    "availableQuantity": 100,
+    "unitPrice": 200
+  },
+  {
+    "name": "Hammer",
+    "img": "https://cdn.pixabay.com/photo/2014/04/02/14/09/hammer-306313_960_720.png",
+    "description": "Some short description",
+    "minimumOrderQuantity": 100,
+    "availableQuantity": 100,
+    "unitPrice": 200
+  }
 ]

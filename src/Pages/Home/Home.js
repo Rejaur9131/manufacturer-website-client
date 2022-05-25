@@ -3,7 +3,6 @@ import Banner from './Banner';
 import Tools from './Tools';
 import BusinessSummary from './BusinessSummary';
 import Reviews from './Reviews';
-import Footer from './Footer';
 
 const Home = () => {
   return (
@@ -12,7 +11,6 @@ const Home = () => {
       <Tools></Tools>
       <BusinessSummary></BusinessSummary>
       <Reviews></Reviews>
-      <Footer></Footer>
     </div>
   );
 };
