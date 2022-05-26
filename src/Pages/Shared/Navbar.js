@@ -20,9 +20,6 @@ const Navbar = () => {
         <Link to="/about">About</Link>
       </li>
       <li>
-        <Link to="/purchase">Purchase</Link>
-      </li>
-      <li>
         <Link to="/review">Reviews</Link>
       </li>
       <li>
@@ -31,6 +28,7 @@ const Navbar = () => {
       <li>
         {user ? (
           <>
+            <Link to="/purchase">Purchase</Link>
             <Link to="/dashboard">Dashboard</Link>
             <Link to="">
               <UserCircleIcon className="h-8 w-8 text-gray-400 font-bold"></UserCircleIcon> <span className="font-bold">{user?.displayName}</span>

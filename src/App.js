@@ -13,14 +13,14 @@ import Footer from './Pages/Shared/Footer';
 
 function App() {
   return (
-    <div className="App">
+    <div className="">
       <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/about" element={<About></About>}></Route>
         <Route path="/about" element={<About></About>}></Route>
         <Route
-          path="/purchase"
+          path="/tools/:id"
           element={
             <RequireAuth>
               <Purchase></Purchase>

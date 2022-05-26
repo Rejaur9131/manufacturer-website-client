@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const ToolsInfoCard = ({ tool }) => {
-  const { name, img, description, minimumOrderQuantity, availableQuantity, unitPrice } = tool;
+  const { _id, name, img, description, minimumOrderQuantity, availableQuantity, unitPrice } = tool;
   const navigate = useNavigate();
   return (
     <div className={`card lg:card-side bg-base-100 shadow-xl mb-5 `}>
@@ -15,7 +15,7 @@ const ToolsInfoCard = ({ tool }) => {
         <p>Unit Price :{unitPrice}</p>
         <p>Available Quantity :{availableQuantity}</p>
         <p>minimum Order Quantity :{minimumOrderQuantity}</p>
-        <button onClick={() => navigate('/purchase')} className="btn btn-xs sm:btn-sm md:btn-md lg:btn-md">
+        <button onClick={() => navigate(`tools/${_id}`)} className="btn btn-xs sm:btn-sm md:btn-md lg:btn-md">
           Book Now
         </button>
       </div>
