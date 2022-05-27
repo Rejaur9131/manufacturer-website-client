@@ -11,7 +11,7 @@ const Purchase = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/tools/${id}`)
+      .get(`https://still-spire-72766.herokuapp.com/tools/${id}`)
       .then((response) => setTool(response.data))
       .catch((error) => console.log(error));
   }, [id]);
