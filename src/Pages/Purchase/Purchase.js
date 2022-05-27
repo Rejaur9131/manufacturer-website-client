@@ -8,14 +8,14 @@ const Purchase = () => {
   const [user, loading, error] = useAuthState(auth);
   const { id } = useParams();
   const [tool, setTool] = useState({});
-  const [orderQuantiy, setOrderQuntity] = useState({});
+  const [orderQuantiy, setOrderQuntity] = useState(tool.minimumOrderQuantity);
   let errorElement;
 
   const orderQuntityRef = useRef('');
 
   const handleOrder = (event) => {
     event.preventDefault();
-    const orderQuntity = orderQuntityRef.current.value;
+    const orderQuntity = orderQuntityRef.current.value || tool.minimumOrderQuantity;
     setOrderQuntity(orderQuntity);
   };
 
@@ -29,7 +29,7 @@ const Purchase = () => {
   if (orderQuantiy < tool.minimumOrderQuantity) {
     errorElement = (
       <p className="text-red-500">
-        <small>{'Your Order is Lowest'}</small>
+        <small>Your Order is Loweer than our requirement</small>
       </p>
     );
   }
@@ -37,7 +37,7 @@ const Purchase = () => {
   if (orderQuantiy > tool.availableQuantity) {
     errorElement = (
       <p className="text-red-500">
-        <small>{'Your Order is Highest'}</small>
+        <small>Not enough resources to process your order</small>
       </p>
     );
   }
@@ -102,7 +102,7 @@ const Purchase = () => {
                 <label className="label">
                   <span className="label-text">Your Order Quantity</span>
                 </label>
-                <input type="number" onBlur={handleOrder} ref={orderQuntityRef} value={tool.minimumOrderQuantity} className="input input-bordered" />
+                <input type="number" onBlur={handleOrder} ref={orderQuntityRef} placeholder={tool.minimumOrderQuantity} className="input input-bordered" />
               </div>
               {errorElement}
               <div className="htmlhtmlForm-control mt-6">
