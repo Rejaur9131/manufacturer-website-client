@@ -20,6 +20,9 @@ const Navbar = () => {
         <Link to="/about">About</Link>
       </li>
       <li>
+        <Link to="/myportfolio">My Portfolio</Link>
+      </li>
+      <li>
         <Link to="/review">Reviews</Link>
       </li>
       <li>
@@ -60,11 +63,11 @@ const Navbar = () => {
             {menuItems}
           </ul>
         </div>
-        <Link to="/" className="btn btn-ghost normal-case text-xl">
-          Site Name
+        <Link to="/" className="btn btn-ghost normal-case text-lg ">
+          Ultimate Tools Builder
         </Link>
       </div>
-      <div className="navbar-center hidden lg:flex">
+      <div className="navbar-center hidden lg:flex ml-20">
         <ul className="menu menu-horizontal p-0">{menuItems}</ul>
       </div>
       <div className="navbar-end">
