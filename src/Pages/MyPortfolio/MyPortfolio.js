@@ -2,9 +2,9 @@ import React from 'react';
 
 const MyPortfolio = () => {
   return (
-    <div class="hero min-h-screen bg-base-200">
-      <div class="hero-content flex-col lg:flex-row">
-        <img src="https://i.ibb.co/njk19Vd/Rejaur.jpg?w=260&h=400" class="max-w-sm rounded-lg shadow-2xl" alt="" />
+    <div className="hero min-h-screen bg-base-200">
+      <div className="hero-content flex-col lg:flex-row">
+        <img src="https://i.ibb.co/njk19Vd/Rejaur.jpg?w=260&h=400" className="max-w-sm rounded-lg shadow-2xl" alt="" />
         <div>
           <h2 className="text-2xl font-bold">Name: Md. Rejaur Rahman</h2>
           <p className="text-xl py-1">Email: rezaurewubd@gmail.com</p>
@@ -25,7 +25,7 @@ const MyPortfolio = () => {
             </li>
             <li>
               <a href="https://verdant-sawine-8b2320.netlify.app/" target="_blank" rel="noreferrer">
-                1. Product Analysis Website
+                3. Product Analysis Website
               </a>
             </li>
           </ul>

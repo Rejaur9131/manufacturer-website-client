@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import auth from './../../firebase.init';
 import { UserCircleIcon } from '@heroicons/react/solid';
 const Navbar = () => {
-  const [user, loading, error] = useAuthState(auth);
+  const [user, gUser, loading, error] = useAuthState(auth);
 
   const logout = () => {
     signOut(auth);
@@ -67,7 +67,7 @@ const Navbar = () => {
           Ultimate Tools Builder
         </Link>
       </div>
-      <div className="navbar-center hidden lg:flex ml-20">
+      <div className="navbar-center hidden lg:flex ml-48">
         <ul className="menu menu-horizontal p-0">{menuItems}</ul>
       </div>
       <div className="navbar-end">

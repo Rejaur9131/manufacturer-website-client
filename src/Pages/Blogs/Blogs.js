@@ -3,9 +3,9 @@ import React from 'react';
 const Blogs = () => {
   return (
     <div className="flex flex-wrap">
-      <div class="card w-96 bg-base-100 shadow-xl image-full m-5">
-        <div class="card-body text-justify">
-          <h2 class="card-title font-bold mb-3">How will you improve the performance of a React Application?</h2>
+      <div className="card w-96 bg-base-100 shadow-xl image-full m-5">
+        <div className="card-body text-justify">
+          <h2 className="card-title font-bold mb-3">How will you improve the performance of a React Application?</h2>
           <p>
             React Application performance can improved by using folowing techniques :
             <ul>
@@ -19,9 +19,9 @@ const Blogs = () => {
           </p>
         </div>
       </div>
-      <div class="card w-96 bg-base-100 shadow-xl image-full m-5">
-        <div class="card-body text-justify">
-          <h2 class="card-title font-bold mb-3">What are the different ways to manage a state in a React application?</h2>
+      <div className="card w-96 bg-base-100 shadow-xl image-full m-5">
+        <div className="card-body text-justify">
+          <h2 className="card-title font-bold mb-3">What are the different ways to manage a state in a React application?</h2>
           <p>
             There are four main types of state to properly manage in your React apps:
             <ul>
@@ -33,21 +33,21 @@ const Blogs = () => {
           </p>
         </div>
       </div>
-      <div class="card w-96 bg-base-100 shadow-xl image-full m-5">
-        <div class="card-body text-justify">
-          <h2 class="card-title">How does prototypical inheritance work?</h2>
+      <div className="card w-96 bg-base-100 shadow-xl image-full m-5">
+        <div className="card-body text-justify">
+          <h2 className="card-title">How does prototypical inheritance work?</h2>
           <p>JavaScript is a prototype-based, Object Oriented programming language. After the ES6 updates, JavaScript allowed for “prototypal inheritance”, meaning that objects and methods can be shared, extended, and copied.The Prototypal Inheritance is a feature in javascript used to add methods and properties in objects. It is a method by which an object can inherit the properties and methods of another object. </p>
         </div>
       </div>
-      <div class="card w-96 bg-base-100 shadow-xl image-full m-5">
-        <div class="card-body text-justify">
-          <h2 class="card-title"> Why you do not set the state directly in React?</h2>
+      <div className="card w-96 bg-base-100 shadow-xl image-full m-5">
+        <div className="card-body text-justify">
+          <h2 className="card-title"> Why you do not set the state directly in React?</h2>
           <p> If we set the state directly, it will change the reference of the state in the previous virtual DOM as well. So, React will not be able to see that there is a change of the state and so it will not be reflected in the original DOM until we reload. The problem is more obvious when we extend a component with React.PureComponent instead of React.component , where React tries to optimize some time by not rendering components if no changes are found. Also, mutating the state directly can lead to odd bugs and components that are hard to optimize.</p>
         </div>
       </div>
-      <div class="card w-96 bg-base-100 shadow-xl image-full m-5">
-        <div class="card-body">
-          <h2 class="card-title">Finding products from an Array:</h2>
+      <div className="card w-96 bg-base-100 shadow-xl image-full m-5">
+        <div className="card-body">
+          <h2 className="card-title">Finding products from an Array:</h2>
           <p>
             {`const products = [
                     { name: 'phone', price: 15000, description: 'MI A2-Lite.' },
@@ -60,9 +60,9 @@ const Blogs = () => {
           </p>
         </div>
       </div>
-      <div class="card w-96 bg-base-100 shadow-xl image-full m-5">
-        <div class="card-body">
-          <h2 class="card-title">What is a unit test? Why should write unit tests?</h2>
+      <div className="card w-96 bg-base-100 shadow-xl image-full m-5">
+        <div className="card-body">
+          <h2 className="card-title">What is a unit test? Why should write unit tests?</h2>
           <p>
             <strong>Unit Test:</strong> In software development Unit testing is a process in which the smallest testable parts of an application, called units, are individually and independently scrutinized for proper operation. This testing methodology is done during the development process by the software developers and sometimes QA staff. The main objective of unit testing is to isolate written code to test and determine if it works as intended.
           </p>
