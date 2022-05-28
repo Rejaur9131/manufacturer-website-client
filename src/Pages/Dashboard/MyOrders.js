@@ -37,23 +37,6 @@ const MyOrders = () => {
               <td>{order.toolName}</td>
               <td>{order.orderQuantiy}</td>
               <td>{order.totalPrice}</td>
-              {/* <td>
-                {a.price && !a.paid && (
-                  <Link to={`/dashboard/payment/${a._id}`}>
-                    <button className="btn btn-xs btn-success">pay</button>
-                  </Link>
-                )}
-                {a.price && a.paid && (
-                  <div>
-                    <p>
-                      <span className="text-success">Paid</span>
-                    </p>
-                    <p>
-                      Transaction id: <span className="text-success">{a.transactionId}</span>
-                    </p>
-                  </div>
-                )}
-              </td> */}
             </tr>
           ))}
         </tbody>
