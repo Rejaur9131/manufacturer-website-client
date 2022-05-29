@@ -36,7 +36,7 @@ const Purchase = () => {
       phoneNumber: phoneRef.current.value
     };
     console.log(order);
-    fetch('https://still-spire-72766.herokuapp.com/myorders', {
+    fetch('https://still-spire-72766.herokuapp.com/orders', {
       method: 'POST',
       headers: {
         'content-type': 'application/json'
