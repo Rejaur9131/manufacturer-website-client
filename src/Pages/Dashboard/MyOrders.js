@@ -8,11 +8,12 @@ const MyOrders = () => {
   const [user] = useAuthState(auth);
   useEffect(() => {
     if (user) {
-      fetch(`https://still-spire-72766.herokuapp.com/orders/${user?.email}`)
+      fetch(`https://still-spire-72766.herokuapp.com/myorders/${user?.email}`)
         .then((res) => res.json())
         .then((data) => {
           setOrders(data);
         });
+      console.log(orders);
     }
   }, [user]);
 
